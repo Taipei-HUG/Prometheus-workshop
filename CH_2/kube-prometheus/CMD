@@ -1,0 +1,1 @@
+kubectl create secret generic prometheus-additional-scrape-configs --from-file=additional-scrape-configs.yaml --dry-run -o yaml > prometheus-additional-scrape-configs.yaml
