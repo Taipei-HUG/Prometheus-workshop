@@ -14,3 +14,4 @@ spec:
     app: prometheus
     prometheus: k8s
   sessionAffinity: ClientIP
+  type: LoadBalancer
