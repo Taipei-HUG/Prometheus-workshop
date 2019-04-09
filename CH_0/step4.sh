@@ -12,3 +12,8 @@ helm install coreos/kube-prometheus --name kube-prometheus --namespace monitorin
 # Check all pod state in Running
 echo 'kubectl get pod -n=monitoring'
 kubectl get pod -n=monitoring
+
+# Expose service to ELB
+kubectl -n monitoring patch svc kube-prometheus -p '{"spec":{"type":"LoadBalancer"}}'
+kubectl -n monitoring patch svc kube-prometheus-grafana -p '{"spec":{"type":"LoadBalancer"}}'
+kubectl -n monitoring patch svc kube-prometheus-alertmanager -p '{"spec":{"type":"LoadBalancer"}}'
