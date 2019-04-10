@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Create eks cluster using eksctl
+echo "Creating eks cluster and node group with two t2.large instances ..."
+eksctl create cluster -f cluster.yaml
+
+# Get KUBECONFIG then kubectl can work
+aws eks update-kubeconfig --name workshop
+
+# Test if kubernate cluster works good
+kubectl get all
+
+echo 'Done setting EKS.'
