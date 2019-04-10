@@ -1,0 +1,14 @@
+apiVersion: monitoring.coreos.com/v1
+kind: PrometheusRule
+metadata:
+  labels:
+    prometheus: k8s
+    role: alert-rules
+  name: prometheus-example-rules2
+  namespace: monitoring
+spec:
+  groups:
+  - name: nginx_rule
+    rules:
+    - alert: NGINXAlert
+      expr: nginx_ingress_controller_nginx_process_requests_total > bool 1000
