@@ -2,6 +2,9 @@ apiVersion: apps/v1beta1
 kind: Deployment
 metadata:
   name: nginx-deployment
+  annotations:
+    prometheus.io/scrape: 'true'
+    prometheus.io/port: '9113'
 spec:
   replicas: 2 # tells deployment to run 2 pods matching the template
   template: # create pods using pod definition in this template
