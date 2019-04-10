@@ -2,7 +2,7 @@
 
 # Install kube-prometheus to Kubernetes cluster
 echo "Installing kube-prometheus ..."
-kubectl applt -f kube-prometheus/manifests/
+kubectl apply -f kube-prometheus/manifests/
 
 # Install pushgateway via Helm
 echo "Installing push-gateway ..."
