@@ -1,0 +1,22 @@
+"global": 
+  "resolve_timeout": "5m"
+"receivers":
+- "name": "slack_alert1"
+  "slack_configs":
+  - "api_url": "https://hooks.slack.com/services/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"
+    "channel": "#alert_1"
+- "name": "slack_alert2"
+  "slack_configs":
+  - "api_url": "https://hooks.slack.com/services/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"
+    "channel": "#alert_2"
+"route": 
+  "receiver": "slack_alert1"
+  "group_interval": "1m"
+  "group_wait": "30s"
+  "repeat_interval": "3m"
+  "group_by": 
+  - "job"
+  "routes": 
+  - "match":
+      "alertname": "NGINXAlert"
+    "receiver": "slack_alert2"
