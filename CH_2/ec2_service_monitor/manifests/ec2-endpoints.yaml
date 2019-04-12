@@ -6,7 +6,7 @@ metadata:
     app: ec2
 subsets:
   - addresses:
-  - ip: <gpu-machine-ip>
+  - ip: <machine-ip>
 ports:
   - name: metrics
     port: 9100
