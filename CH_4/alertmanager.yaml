@@ -18,5 +18,5 @@
   - "job"
   "routes": 
   - "match_re":
-      "alertname": "NGINX.*"
+      "alertname": "^NGINX.*"
     "receiver": "slack_alert2"
