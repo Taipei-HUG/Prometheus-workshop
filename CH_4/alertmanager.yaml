@@ -17,6 +17,6 @@
   "group_by": 
   - "job"
   "routes": 
-  - "match":
-      "alertname": "NGINXAlert"
+  - "match_re":
+      "alertname": "NGINX.*"
     "receiver": "slack_alert2"
