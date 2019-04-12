@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Create eks cluster using eksctl
-echo "Creating eks cluster and node group with two t2.large instances ..."
+echo "Creating eks cluster and node group with two t3.large instances ..."
 eksctl create cluster -f eks_cluster.yml
 
 # Get KUBECONFIG then kubectl can work
