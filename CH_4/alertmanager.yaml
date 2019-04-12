@@ -9,6 +9,8 @@
   "slack_configs":
   - "api_url": "https://hooks.slack.com/services/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"
     "channel": "#alert_2"
+    "title": "{{ range .Alerts }}{{ .Annotations.summary }}\n{{ end }}"
+    "text": "{{ range .Alerts }}{{ .Annotations.description }}\n{{ end }}"
 "route": 
   "receiver": "slack_alert1"
   "group_interval": "1m"
