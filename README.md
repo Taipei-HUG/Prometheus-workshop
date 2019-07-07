@@ -11,7 +11,7 @@ Presentation Slide is [here][2]
 ## Warm Up
 
 ### CH 0 
-- [Basic Installation](installation/README.md)
+- [Basic Installation](Installation/README.md)
 
 ### CH 1 
 - [Head First Kubernetes](head-first-kubernetes/README.md)
@@ -31,4 +31,4 @@ Presentation Slide is [here][2]
 - [AlertManager](alertmanager/README.md)
 
 ### CH 6 
-- [Promethesus Operator](promethesus-operator/README.md)
+- [Promethesus Operator](prometheus-operator/README.md)
