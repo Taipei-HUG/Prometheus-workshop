@@ -1,0 +1,16 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: hello
+spec:
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: hello
+    spec:
+      containers:
+      - name: app
+        image: quay.io/owensengoku/prometheus-example-app:v0.1.0
+        ports:
+        - containerPort: 8080
