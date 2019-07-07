@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: busybox
+spec:
+  containers:
+  - name: busybox
+    image: quay.io/owensengoku/busybox-curl:v0.1.0
+    command:
+    - "busybox"
+    - "sh"
+    - "-c"
+    - "sleep 10000"
