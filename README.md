@@ -11,7 +11,7 @@ Presentation Slide is [here][2]
 ## Warm Up
 
 ### CH 0 
-- [Installation](installation/README.md)
+- [Installation](install/README.md)
 
 ### CH 1 
 - [Head First Kubernetes](head-first-kubernetes/README.md)
