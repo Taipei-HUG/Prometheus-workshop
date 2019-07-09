@@ -67,4 +67,3 @@
     target_label: endpoint
     replacement: "8080"
     action: replace
--
